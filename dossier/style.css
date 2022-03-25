@@ -42,6 +42,8 @@ header{
     justify-content: space-around;
 }
 /* ------------REGLAGE ESPACE ENTRE LOGO---------- */
+
+/* ------------REGLAGE ESPACE ENTRE LOGO---------- */
 header img{
     margin: 0 3px;
 }
@@ -149,9 +151,23 @@ input.bouton{
 .reseausocio{
     color: #FFFF;
     width: 150px;
+    height: 25px;
     border: solid;
     border-color: #FFFF;
-    border-radius: 30px;
+    border-radius: 8px;
     background-color: #114C92;
     
+}
+/* ----------------------------partie3---------------------------- */
+/* ----------------------------footer---------------------------- */
+footer{
+    background-color: #000000;
+    padding: 10vh 3vh;
+}
+footer img.rso{
+    clip-path:circle();
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    margin: 3px;
 }
