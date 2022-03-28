@@ -7,22 +7,25 @@ body{
 }
 h1{
     font-family: Far From Homecoming;
+    color: #FFFF;
     font-size: 32px;
-
 }
 h2{
     font-family: Far From Homecoming;
     font-size: 20px;
+    color: #FFFF;
     font-weight: bold;
 }
 h3{
     font-family: Montserrat;
     font-size: 20px;
+    color: #FFFF;
     font-weight: semi-bold;
 }
-h4{
+h4, p{
     font-family: Montserrat;
     font-size: 16px;
+    color: #FFFF;
     font-weight: lighter;
 }
 /* classe background */
@@ -63,9 +66,21 @@ header a{
 }
 /* ----------------------------header---------------------------- */
 
-
+/* ----------------------------footer---------------------------- */
+footer{
+    background-color: #000000;
+    padding: 10vh 3vh;
+}
+footer img.rso{
+    clip-path:circle();
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    margin: 3px;
+}
+/* ----------------------------footer---------------------------- */
 /* ----------------------------A propos page html---------------------------- */
-/* ----------------------------partie1---------------------------- */
+/* ----------------------------partie1 section---------------------------- */
 .partie1{
     background-color: #F1C530;
 }
@@ -85,8 +100,8 @@ header a{
     transform: scale(-1,1);
     max-width: 100%;
 }
-/* ----------------------------partie1---------------------------- */
-/* ----------------------------partie2---------------------------- */
+/* ----------------------------partie1 section---------------------------- */
+/* ----------------------------partie2 section---------------------------- */
 .partie2{
     display: flex;
     background-color: #B11313;
@@ -131,8 +146,8 @@ input.grand{
 input.bouton{
     width: 75%;
 }
-/* ----------------------------partie2---------------------------- */
-/* ----------------------------partie3---------------------------- */
+/* ----------------------------partie2 section---------------------------- */
+/* ----------------------------partie3 section---------------------------- */
 .partie3{
     background-color: #114C92;
     padding: 0 7vh;
@@ -158,16 +173,39 @@ input.bouton{
     background-color: #114C92;
     
 }
-/* ----------------------------partie3---------------------------- */
-/* ----------------------------footer---------------------------- */
-footer{
-    background-color: #000000;
-    padding: 10vh 3vh;
+/* ----------------------------partie3 section---------------------------- */
+/* ----------------------------A propos page html---------------------------- */
+
+/* ----------------------------Adversaires page html---------------------------- */
+/* ----------------------------Vilains section---------------------------- */
+.vilains{
+    padding: 3vh 5%;
+    height:70vh ;
+    background-image: url(../Assets/Illustration/img7.png);
+    background-size:calc(100%);
+    background-repeat: none;
 }
-footer img.rso{
-    clip-path:circle();
-    width: 20px;
-    height: 20px;
-    padding: 3px;
-    margin: 3px;
+/* ----------------------------Adversaires page html---------------------------- */
+
+/* ----------------------------Heros page html---------------------------- */
+/* ----------------------------Heros section---------------------------- */
+.heros{
+    height:70vh ;
+    display: flex;
+    align-items: center;
+    background-image: url(../Assets/Illustration/img19.png);
+    background-size: calc(100%);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* ----------------------------Heros section---------------------------- */
+/* ----------------------------fondations section---------------------------- */
+.fondations{
+    height:60vh ;
+    display: flex;
+    align-items: center;
+    background-image: url(../Assets/Illustration/img20.png);
+    background-size: calc(100%);
+    background-repeat: no-repeat;
+    background-position: center;
 }
