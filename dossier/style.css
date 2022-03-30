@@ -1,4 +1,27 @@
 /* CONFIGURATION GENERALE */
+:root{
+    --bs-rouge: #B11313;
+    --bs-jaune: #F1C530;
+    --bs-bleu: #114C92;
+}
+.text-rouge{
+    color: var(--bs-rouge);
+}
+.text-bleu{
+    color: var(--bs-bleu);
+}
+.text-jaune{
+    color: var(--bs-jaune);
+}
+.bg-rouge{
+    background-color: var(--bs-rouge);
+}
+.bg-bleu{
+    background-color: var(--bs-bleu);
+}
+.bg-jaune{
+    background-color: var(--bs-jaune);
+}
 body{
     margin:0;
     padding:0;
@@ -71,12 +94,25 @@ footer{
     background-color: #000000;
     padding: 10vh 3vh;
 }
+footer ul li{
+    margin: 0 5vh;
+}
 footer img.rso{
     clip-path:circle();
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     padding: 3px;
     margin: 3px;
+}
+footer select{
+    border-radius: 10px;
+    color: #FFFF;
+    border: none;
+    width: 100px;
+    height:25px
+}
+footer option{
+    color: #FFFF;
 }
 /* ----------------------------footer---------------------------- */
 /* ----------------------------A propos page html---------------------------- */
@@ -95,6 +131,9 @@ footer img.rso{
     align-items: center;
     width: 100%;
 }
+.partie1 span{
+    margin: 2vh;
+}
 /* inversion de l'image */
 .rotate{
     transform: scale(-1,1);
@@ -103,7 +142,7 @@ footer img.rso{
 /* ----------------------------partie1 section---------------------------- */
 /* ----------------------------partie2 section---------------------------- */
 .partie2{
-    display: flex;
+    padding: 3vh;
     background-color: #B11313;
 }
 /* REGLAGE PARTIE DANS NOTE */
@@ -111,16 +150,19 @@ footer img.rso{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 /* REGLAGE IMAGE */
 .note img{
-    height: 50%;
-    width: auto;
+    height: auto;
+    width: 100%;
+    padding: 5%;
 }
 /* REGLAGE PARTIE FORMULAIRE */
 .formulaire{
     display: flex;
     margin: auto;
+    padding: 1vh 2vh;
     width: 100%;
 }
 .formulaire form{
@@ -135,6 +177,7 @@ footer img.rso{
     margin: 10px 0;
     width: 85%;
     height: 4vh;
+    color: #FFFF;
     border: solid;
     border-radius: 30px;
     border-color: #FFFF;
@@ -143,14 +186,20 @@ footer img.rso{
 input.grand{
     height: 20vh;
 }
-input.bouton{
+input button{
     width: 75%;
+    text-align: center;
+    text-justify: center;
 }
 /* ----------------------------partie2 section---------------------------- */
 /* ----------------------------partie3 section---------------------------- */
 .partie3{
     background-color: #114C92;
     padding: 0 7vh;
+}
+.partie3 ul{
+    list-style: none;
+    color: #FFFF;
 }
 .Titre{
     padding-top: 1px;
@@ -162,11 +211,13 @@ input.bouton{
 .partie3 span{
     width: 100%;
     padding: 0 5px;
+    text-align: justify;
 }
+
 .reseausocio{
     color: #FFFF;
-    width: 150px;
-    height: 25px;
+    height: 5vh;
+    margin: 5px 5px;
     border: solid;
     border-color: #FFFF;
     border-radius: 8px;
@@ -208,4 +259,60 @@ input.bouton{
     background-size: calc(100%);
     background-repeat: no-repeat;
     background-position: center;
+}
+/* ----------------------------univers section---------------------------- */
+.univers{
+    background-image: url(../Assets/Illustration/img33.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.univers div{
+    background-color: rgba(17, 76, 146,0.5);
+    display: flex;
+    margin: 0 5% 0 40%;
+}
+
+
+
+
+/* ----------------------------bonus page---------------------------- */
+/* ----------------------------main section---------------------------- */
+main{
+    height: 100vh;
+    background-image: url(../Assets/Illustration/img35.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:scroll;
+
+}
+
+
+
+/* ----------------------------bonus page---------------------------- */
+
+
+/* ----------------------------Home page---------------------------- */
+/* ----------------------------spiderman section---------------------------- */
+.spiderman{
+    height: 100vh;
+    background-image: url(../Assets/Illustration/img1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* ----------------------------responsive---------------------------- */
+
+@media only screen and (max-width: 400px) {
+    footer ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .partie3 span{
+        text-align:center;
+    }
+    
 }
