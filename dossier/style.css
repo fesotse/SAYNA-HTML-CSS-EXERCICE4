@@ -234,7 +234,7 @@ input button{
 /* ----------------------------Vilains section---------------------------- */
 .vilains{
     padding: 3vh 5%;
-    height:95vh ;
+    height:50vh;
     display: flex;
     align-items: center;
     background-image: url(../Assets/Illustration/img7.png);
@@ -245,6 +245,27 @@ input button{
 
 }
 
+.Acteur img {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    
+    
+}
+.info{
+    margin-bottom: 10px;
+    padding: 2px;
+    text-align: left;
+    border: solid;
+    border-color: #000000;
+    border-width: 10px;
+    border-top: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;    
+}
+.info p{
+    color: #000000;   
+}
 /* ----------------------------Adversaires page html---------------------------- */
 
 /* ----------------------------Heros page html---------------------------- */
