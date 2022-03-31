@@ -91,8 +91,10 @@ header a{
 
 /* ----------------------------footer---------------------------- */
 footer{
+    display: flex;
+    flex-direction: column;
     background-color: #000000;
-    padding: 10vh 3vh;
+    padding: 10vh 1vh;
 }
 footer ul li{
     margin: 0 5vh;
@@ -115,6 +117,7 @@ footer option{
     color: #FFFF;
 }
 /* ----------------------------footer---------------------------- */
+
 /* ----------------------------A propos page html---------------------------- */
 /* ----------------------------partie1 section---------------------------- */
 .partie1{
@@ -231,11 +234,17 @@ input button{
 /* ----------------------------Vilains section---------------------------- */
 .vilains{
     padding: 3vh 5%;
-    height:70vh ;
+    height:95vh ;
+    display: flex;
+    align-items: center;
     background-image: url(../Assets/Illustration/img7.png);
-    background-size:calc(100%);
-    background-repeat: none;
+    background-attachment: local;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
+
 /* ----------------------------Adversaires page html---------------------------- */
 
 /* ----------------------------Heros page html---------------------------- */

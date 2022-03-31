@@ -19,11 +19,14 @@
             <img class="PM" src="../Assets/Logo/logo2.png" alt="s">
             <img class="GM" src="../Assets/Logo/logo3.png" alt="s">
         </div>
-        <div class="desktop">
+        <div class="d-none d-md-flex">
             <a href="Home.html">Accueil</a>
             <a href="Adversaires.html">Adversaires</a>
             <a href="Heros.html">Héros</a>
             <a href="A_propos.html">A propos</a>
+        </div>
+        <div class="d-md-none text-white">
+            <i class="fa-2 fa-solid fa-ellipsis"></i>
         </div>
     </header>
     <section class="vilains">
@@ -163,32 +166,41 @@
 
 
     <footer>
-        <!-- <div class="d-flex">
-            <ul class="list-inline text-white">
-                <li class="list-inline-item">Mobile app</li>
-                <li class="list-inline-item">Politiques de confidentialité</li>
-                <li class="list-inline-item">Cookies</li>
-                <li class="d-none d-sm-flex">
-                    <div class="logo">
-                        <img class="GM" src="../Assets/Logo/logo1.png" alt="s">
-                        <img class="PM" src="../Assets/Logo/logo2.png" alt="s">
-                        <img class="GM" src="../Assets/Logo/logo3.png" alt="s">
-                    </div>
-                </li>
-                <li class="list-inline-item">Contact</li>
-                <li class="list-inline-item">Blog</li>
-            </ul>
-            <div><select name="Langue" id="" class="jaune">
-                <option value="">Langue</option>
-            </select> </div>
-        </div> -->
+        <div class="d-grid">
+            <div class="d-flex justify-content-evenly">
+                <ul class="d-grid d-md-flex list-inline text-white ps-1">
+                    <li class="list-inline-item">Mobile app</li>
+                    <li class="list-inline-item">Politiques de confidentialité</li>
+                    <li class="list-inline-item">Cookies</li>
+                    <li class="d-none d-md-flex">
+                        <div class="logo">
+                            <img class="GM" src="../Assets/Logo/logo1.png" alt="s">
+                            <img class="PM" src="../Assets/Logo/logo2.png" alt="s">
+                            <img class="GM" src="../Assets/Logo/logo3.png" alt="s">
+                        </div>
+                    </li>
+                    <li class="list-inline-item">Contact</li>
+                    <li class="list-inline-item">Blog</li>
+                </ul>
+                <div>  
+                    <select name="Langue" id="" class="jaune">
+                    <option value="">Langue</option>
+                    </select>
+                </div>
+            </div>
+            <div class="d-md-none logo text-center">
+                <img class="GM" src="../Assets/Logo/logo1.png" alt="s">
+                <img class="PM" src="../Assets/Logo/logo2.png" alt="s">
+                <img class="GM" src="../Assets/Logo/logo3.png" alt="s">
+            </div>
+        </div>
         <div class="d-flex center my-3">
             <img src="../Assets/Logo/logof.png" alt="Facebook" class="rso jaune">
             <img src="../Assets/Logo/logoi.png" alt="Instagram" class="rso jaune">
             <img src="../Assets/Logo/logoy.png" alt="Youtube" class="rso jaune">
             <img src="../Assets/Logo/logot.png" alt="Twitter" class="rso jaune">
         </div>
-        <div class="center">
+        <div class="center text-light">
             <span> &copy; SaynaXMarvel, Inc.2022. We love our users!</span>
         </div>
     </footer>
