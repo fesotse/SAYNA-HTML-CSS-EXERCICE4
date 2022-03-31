@@ -302,24 +302,22 @@ input button{
     display: flex;
     margin: 0 5% 0 40%;
 }
-
+/* ----------------------------Adversaires page html---------------------------- */
 
 
 
 /* ----------------------------bonus page---------------------------- */
 /* ----------------------------main section---------------------------- */
 main{
-    height: 100vh;
+    height: 90vh;
     background-image: url(../Assets/Illustration/img35.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:scroll;
-
 }
 
-
-
+/* ----------------------------main section---------------------------- */
 /* ----------------------------bonus page---------------------------- */
 
 
