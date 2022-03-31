@@ -45,11 +45,15 @@ h3{
     color: #FFFF;
     font-weight: semi-bold;
 }
-h4, p{
+h4 {
     font-family: Montserrat;
     font-size: 16px;
     color: #FFFF;
-    font-weight: lighter;
+}
+p {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #FFFF;
 }
 /* classe background */
 .rouge{
@@ -112,6 +116,9 @@ footer select{
     border: none;
     width: 100px;
     height:25px
+}
+footer section::backdrop{
+    color: #FFFF;
 }
 footer option{
     color: #FFFF;
@@ -186,6 +193,9 @@ footer option{
     border-color: #FFFF;
     background-color: #B11313;
 }
+input::placeholder{
+    color: #FFFF;
+}
 input.grand{
     height: 20vh;
 }
@@ -206,10 +216,6 @@ input button{
 }
 .Titre{
     padding-top: 1px;
-}
-.PC-flex{
-    display: flex;
-    justify-content: center;
 }
 .partie3 span{
     width: 100%;
@@ -248,9 +254,7 @@ input button{
 .Acteur img {
     width: 100%;
     height: auto;
-    padding-top: 10px;
-    
-    
+    padding-top: 10px;   
 }
 .info{
     margin-bottom: 10px;
@@ -269,27 +273,86 @@ input button{
 /* ----------------------------Adversaires page html---------------------------- */
 
 /* ----------------------------Heros page html---------------------------- */
-/* ----------------------------Heros section---------------------------- */
+/* ----------------------------heros section---------------------------- */
 .heros{
     height:70vh ;
+    padding: 5vh;
     display: flex;
     align-items: center;
     background-image: url(../Assets/Illustration/img19.png);
-    background-size: calc(100%);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-/* ----------------------------Heros section---------------------------- */
+/* ----------------------------heros section---------------------------- */
+/* ----------------------------message section---------------------------- */
+.message{
+    padding: 15vh;
+    text-align:justify;
+    height: fit-content;
+}
+.message div{
+    width: 100%;
+}
+.message iframe{
+    padding: 4vh;
+    width: 90%;
+}
+/* ----------------------------message section---------------------------- */
 /* ----------------------------fondations section---------------------------- */
 .fondations{
     height:60vh ;
     display: flex;
     align-items: center;
     background-image: url(../Assets/Illustration/img20.png);
-    background-size: calc(100%);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+/* ----------------------------fondations section---------------------------- */
+/* ----------------------------capacite section---------------------------- */
+.capacite{
+    padding: 5vh;
+}
+.capacite div{
+    width: 100%;
+    padding: 10px;
+    text-align: justify;
+}
+.relative{
+    position:relative
+}
+.droite{
+    position: absolute;
+    left: 50%;
+    top: -3%;
+}
+.ami img{
+    width:37vh;
+    height: auto;
+    margin: 2px auto;
+}
+img.superpose{
+    position: absolute;
+    top:10vh;
+    left:20vh;
+    width:37vh;
+    height: auto;
+}
+.mji{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.mji div{
+    width: 100%;
+}
+.photo{
+    display: flex;
+}
+/* .mji img{
+    width:calc(col-8/2);
+} */
+/* ----------------------------capacite section---------------------------- */
 /* ----------------------------univers section---------------------------- */
 .univers{
     background-image: url(../Assets/Illustration/img33.jpg);
@@ -302,7 +365,7 @@ input button{
     display: flex;
     margin: 0 5% 0 40%;
 }
-/* ----------------------------Adversaires page html---------------------------- */
+/* ----------------------------Heros page html---------------------------- */
 
 
 
@@ -336,7 +399,7 @@ main{
 }
 /* ----------------------------responsive---------------------------- */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 760px) {
     footer ul{
         display: flex;
         justify-content: space-between;
@@ -345,5 +408,24 @@ main{
     .partie3 span{
         text-align:center;
     }
-    
+    .message{
+        text-align: center;
+    }
+    .jamais{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .droite{
+        position:initial;
+    }
+    img.superpose{
+        position:initial;
+    }
+    .mji{
+        display: block;
+    }
+    .photo{
+        display: inline;
+    }
 }
