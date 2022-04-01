@@ -396,31 +396,10 @@ img.superpose{
     background-color: rgba(17, 75, 146, 0.76);
     text-align: justify;
 }
-/* ----------------------------Heros page html---------------------------- */
-.pardev{
-    height:50vh;
-    background-image: url(../Assets/Illustration/img5.png);
-    background-repeat: repeat;
-    background-position: left;
-    background-size: cover;
-}
-/* ----------------------------devenir div---------------------------- */
-.devenir{
-    display: block;
-    margin-left: auto;
-    width: 50%;
-}
-.devenir input{
-    margin: 10px 0;
-    width: 85%;
-    height: 4vh;
-    border: solid;
-    border-radius: 30px;
-}
 
-.black::placeholder{
-    color: #000000;
- }
+/* ----------------------------Heros page html---------------------------- */
+
+
 
 /* ----------------------------bonus page---------------------------- */
 /* ----------------------------main section---------------------------- */
@@ -453,6 +432,8 @@ main{
     justify-content: center;
     padding-left: 5vh;
 }
+
+
 /* --------------------parametrage des boutons------------------- */
 .b{
     border: solid;
@@ -474,13 +455,71 @@ main{
     color:#B11313;
 
 }
+/* --------------------parametrage legende figure------------------- */
+legend figure{
+    margin-bottom: 0;
+    padding-bottom: 3vh;
+}
 /* --------------------parametrage des boutons------------------- */
 .legende figcaption{
     text-align: justify;
     color: #FFFF;
     padding: 2vh;
-    margin: 2px;
 }
+
+
+/* ----------------------------pardev section---------------------------- */
+.pardev{
+    display: flex;
+}
+.devenir{
+    display: block;
+    margin-left: auto;
+    width: 50%;
+}
+.devenir input{
+    margin: 10px 0;
+    width: 85%;
+    height: 4vh;
+    border: solid;
+    border-radius: 30px;
+}
+
+.black::placeholder{
+    color: #000000;
+}
+/* ----------------------------pardev section---------------------------- */
+/* ----------------------------newsletter section---------------------------- */
+.newsletter{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.newsletter div{
+    width: 100%;
+}
+.newsletter img{
+    width: 100%;
+    height: 100%;
+}
+input.blanc{
+    margin: 0 0 3px 0;
+    border: solid;
+    border-width: 4px;
+    border-color: #FFFF;
+    border-radius: 15px;
+    background-color: #B11313; 
+}
+.blanc::placeholder{
+    color: #FFFF;
+}
+
+/* ----------------------------newsletter section---------------------------- */
+/* ----------------------------Home page---------------------------- */
+
+
+
+
 /* ----------------------------responsive---------------------------- */
 
 @media only screen and (max-width: 760px) {
@@ -525,5 +564,25 @@ main{
     }
     .photo img{
         width:10vh
+    }
+    .pardev{
+        height:70vh;
+        background-image: url(../Assets/Illustration/img5.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-size:cover;
+    }
+    .devenir{
+        width: 100%;
+        padding: 2vh;
+    }
+    .newsletter{
+        height: fit-content;
+        background-image: url(../Assets/Illustration/img6.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-attachment: local;
+        background-size: calc(100%);
+
     }
 }
