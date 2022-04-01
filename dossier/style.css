@@ -1,4 +1,8 @@
 /* CONFIGURATION GENERALE */
+@font-face{
+    font-family: Far From Homecoming;
+    src:url(Far-From.otf)
+}
 :root{
     --bs-rouge: #B11313;
     --bs-jaune: #F1C530;
@@ -34,24 +38,25 @@ h1{
     font-size: 32px;
 }
 h2{
-    font-family: Far From Homecoming;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: #FFFF;
-    font-weight: bold;
+    font-weight:Bold 700;
 }
 h3{
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: #FFFF;
-    font-weight: semi-bold;
+    font-weight: SemiBold 600;
 }
 h4 {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #FFFF;
+    font-weight: Medium 500;
 }
 p {
-    font-family: Montserrat;
+    font-family: 'Montserrat' ,sans-serif;
     font-size: 16px;
     color: #FFFF;
 }
@@ -275,7 +280,7 @@ input button{
 /* ----------------------------Heros page html---------------------------- */
 /* ----------------------------heros section---------------------------- */
 .heros{
-    height:70vh ;
+    height:50vh ;
     padding: 5vh;
     display: flex;
     align-items: center;
@@ -297,11 +302,12 @@ input button{
 .message iframe{
     padding: 4vh;
     width: 90%;
+    height: 100%;
 }
 /* ----------------------------message section---------------------------- */
 /* ----------------------------fondations section---------------------------- */
 .fondations{
-    height:60vh ;
+    height:50vh ;
     display: flex;
     align-items: center;
     background-image: url(../Assets/Illustration/img20.png);
@@ -345,17 +351,6 @@ img.superpose{
     display: flex;
     flex-direction: row-reverse;
 }
-.mji div{
-    width: 100%;
-}
-.photo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-/* .mji img{
-    width:calc(col-8/2);
-} */
 /* ----------------------------capacite section---------------------------- */
 /* ----------------------------rouge section---------------------------- */
 .avenger{
@@ -364,10 +359,15 @@ img.superpose{
 }
 .avenger>div{
     display:initial;
-    width: 100%;
+    width: 50%;
 }
 .avenger img{
     width:35vh;
+    margin: 2vh;
+}
+.avenger p{
+    width:35vh;
+    text-align: justify;
     margin: 2vh;
 }
 .total{
@@ -383,15 +383,18 @@ img.superpose{
 /* ----------------------------rouge section---------------------------- */
 /* ----------------------------univers section---------------------------- */
 .univers{
-    background-image: url(../Assets/Illustration/img33.jpg);
+    height: 55vh;
+    background-image: url(../Assets/Illustration/img33.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
 }
 .univers div{
-    background-color: rgba(17, 76, 146,0.5);
-    display: flex;
-    margin: 0 5% 0 40%;
+    width: 45%;
+    height: 55vh;
+    margin: 0 5% 0 50%;
+    background-color: rgba(17, 75, 146, 0.76);
+    text-align: justify;
 }
 /* ----------------------------Heros page html---------------------------- */
 
@@ -456,12 +459,16 @@ main{
     .photo{
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
     div.photo{
         padding: 0;
     }
     .photo div{
         padding:0
+    }
+    photo div img{
+        margin: 0;
     }
     .photo img{
         width:10vh
