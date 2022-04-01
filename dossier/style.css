@@ -397,8 +397,30 @@ img.superpose{
     text-align: justify;
 }
 /* ----------------------------Heros page html---------------------------- */
+.pardev{
+    height:50vh;
+    background-image: url(../Assets/Illustration/img5.png);
+    background-repeat: repeat;
+    background-position: left;
+    background-size: cover;
+}
+/* ----------------------------devenir div---------------------------- */
+.devenir{
+    display: block;
+    margin-left: auto;
+    width: 50%;
+}
+.devenir input{
+    margin: 10px 0;
+    width: 85%;
+    height: 4vh;
+    border: solid;
+    border-radius: 30px;
+}
 
-
+.black::placeholder{
+    color: #000000;
+ }
 
 /* ----------------------------bonus page---------------------------- */
 /* ----------------------------main section---------------------------- */
@@ -421,12 +443,43 @@ main{
 /* ----------------------------Home page---------------------------- */
 /* ----------------------------spiderman section---------------------------- */
 .spiderman{
-    height: 100vh;
+    height: 70vh;
     background-image: url(../Assets/Illustration/img1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vh;
+}
+/* --------------------parametrage des boutons------------------- */
+.b{
+    border: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border: #FFFF;
+    height: 25px;
+    background-color: #B11313;
+    color: #FFFF;
+
+}
+.b-blanc{
+    border: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border: #FFFF;
+    height: 25px;
+    background-color: #FFFF;
+    color:#B11313;
+
+}
+/* --------------------parametrage des boutons------------------- */
+.legende figcaption{
+    text-align: justify;
+    color: #FFFF;
+    padding: 2vh;
+    margin: 2px;
 }
 /* ----------------------------responsive---------------------------- */
 
