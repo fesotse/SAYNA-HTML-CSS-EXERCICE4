@@ -327,10 +327,12 @@ input button{
     left: 50%;
     top: -3%;
 }
+
 .ami img{
     width:37vh;
     height: auto;
-    margin: 2px auto;
+    margin: 10px auto;
+    padding-bottom: 3vh;
 }
 img.superpose{
     position: absolute;
@@ -348,11 +350,37 @@ img.superpose{
 }
 .photo{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 /* .mji img{
     width:calc(col-8/2);
 } */
 /* ----------------------------capacite section---------------------------- */
+/* ----------------------------rouge section---------------------------- */
+.avenger{
+    display: flex;
+    width: 100%;
+}
+.avenger>div{
+    display:initial;
+    width: 100%;
+}
+.avenger img{
+    width:35vh;
+    margin: 2vh;
+}
+.total{
+    width:100%;
+    height: auto;
+}
+.total img{
+    width: 100%;
+    height:100%;
+}
+
+
+/* ----------------------------rouge section---------------------------- */
 /* ----------------------------univers section---------------------------- */
 .univers{
     background-image: url(../Assets/Illustration/img33.jpg);
@@ -426,6 +454,16 @@ main{
         display: block;
     }
     .photo{
-        display: inline;
+        display: flex;
+        flex-direction: row;
+    }
+    div.photo{
+        padding: 0;
+    }
+    .photo div{
+        padding:0
+    }
+    .photo img{
+        width:10vh
     }
 }
