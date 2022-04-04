@@ -421,6 +421,10 @@ main{
 
 /* ----------------------------Home page---------------------------- */
 /* ----------------------------spiderman section---------------------------- */
+.tete{
+    position: absolute;
+    top: 3vh;
+}
 .spiderman{
     height: 70vh;
     background-image: url(../Assets/Illustration/img1.png);
@@ -565,6 +569,15 @@ input.blanc{
     .photo img{
         width:10vh
     }
+    .Spi{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .legende figcaption{
+        text-align: center;
+        color: #FFFF;
+        padding: 2vh;
+    }
     .pardev{
         height:70vh;
         background-image: url(../Assets/Illustration/img5.png);
@@ -580,9 +593,11 @@ input.blanc{
         height: fit-content;
         background-image: url(../Assets/Illustration/img6.png);
         background-repeat: no-repeat;
-        background-position: right;
+        background-position-x: right;
+        background-position-y: bottom;
         background-attachment: local;
         background-size: calc(100%);
 
     }
+    
 }
