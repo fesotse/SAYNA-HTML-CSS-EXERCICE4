@@ -612,6 +612,16 @@ input.blanc{
         background-size: cover;
         background-repeat: no-repeat;
     }
+    .heros{
+        display: flex;
+        flex-direction: column;
+        height:50vh ;
+        padding: 5vh;
+        background-image: url(../Assets/Illustration/img19.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     .head{
         display: flex;
         flex-direction:row ;
