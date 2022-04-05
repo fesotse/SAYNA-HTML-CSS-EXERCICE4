@@ -354,43 +354,45 @@ img.superpose{
 }
 /* ----------------------------capacite section---------------------------- */
 /* ----------------------------rouge section---------------------------- */
-.avenger{
+.grid-container{
     display: inline-grid;
-    grid-template-areas:'1 5'
-                        '2 5'
-                        '3 6'
-                        '4 7';
+    gap: 3vh;
 }
 .item1{
-    grid-area: 1;
+    grid-area: 1/1/span 1/span 1;
 }
 .item2{
-    grid-area: 2;
-}.item3{
-    grid-area: 3;
-}.item4{
-    grid-area: 4;
-}.item5{
-    grid-area: 5;
-}.item6{
-    grid-area: 6;
+    grid-area: 2/1/span 1/span 1;
+}
+.item3{
+    grid-area: 3/1/span 1/span 1;
+}
+.item4{
+    grid-area: 4/1/span 1/span 1;
+}
+.item5{
+    grid-area: 1/2/span 2/span 2;
+}
+.item6{
+    grid-area: 3/2/span 1/span 1;
 }
 .item7{
-    grid-area: 7;
+    grid-area: 4/2/span 1/span 1;
 }
 /* .avenger{
     display: flex;
     width: 100%;
 } */
-.avenger>div{
+.grid-container>div{
     display:initial;
-    width: 50%;
+    width:auto;
 }
-.avenger img{
-    width:35vh;
+
+.grid-container img{
+    width: 35vh;
     margin: 2vh;
 }
-.avenger p{
+.grid-container p{
     width:35vh;
     text-align: justify;
     margin: 2vh;
